@@ -1,0 +1,439 @@
+.language-select {
+  color: #12a0d6;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+.language-select__country {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.start-menu__logIn {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.start-menu__register {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.arrow-back {
+  margin-left: auto; /*Positions it from the others to the left corner automatically - no need to media query it*/
+}
+body {
+  background-image: url(images/pattern-phone-two.png);
+  background-repeat: no-repeat;
+  position: relative;
+  height: 100vh;
+  margin: 0;
+  background-size: cover;
+}
+.logo {
+  height: 50px;
+  block-size: 6%;
+  margin-top: 5.5rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.language-select {
+  /*Default language selector for all phone screens*/
+  color: #12a0d6;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  margin: 0.5rem;
+}
+.start-menu {
+  /*Creating the frosted background*/
+  background-color: rgb(255, 255, 255, 0.5);
+  backdrop-filter: blur(40px);
+  height: 156px;
+  border-radius: 15px;
+  margin: 2.5rem;
+  box-shadow: 10px 5px 5px rgb(0, 0, 0, 0.2);
+  border: white solid 3px;
+  display: flex;
+  flex-direction: column;
+}
+.start-menu__ul {
+  text-decoration: none;
+  list-style: none; /*Removes the bulletpoints of the UL*/
+  display: grid; /* Grid for button gaps*/
+  gap: 15px;
+  padding: 0px;
+}
+.start-menu__link--blue {
+  background-color: #1abbe7;
+  height: 49px;
+  border-radius: 10px;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center; /*centres the text*/
+  align-items: center;
+}
+.start-menu__link--clear {
+  border: #0a5064 solid 2px;
+  height: 49px;
+  border-radius: 10px;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center; /*Centres the text inside the link*/
+  align-items: center;
+}
+.start-menu__logIn {
+  text-decoration: none; /*Removes underline from links*/
+  color: #e1f9ff;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+}
+.start-menu__register {
+  text-decoration: none; /*Removes underline from links*/
+  color: #0a5064;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+}
+.start-menu__link--blue:active {
+  background-color: #13aad3;
+}
+.start-menu__link--clear:active {
+  background-color: #1a7690;
+  opacity: 20%;
+}
+/*This section is for the log in and registration screen*/
+.log-in {
+  background-color: rgb(255, 255, 255, 0.5);
+  backdrop-filter: blur(40px);
+  height: 275px;
+  border-radius: 15px;
+  margin: 2.5rem;
+  box-shadow: 10px 5px 5px rgb(0, 0, 0, 0.2);
+  border: white solid 3px;
+  gap: 1rem;
+  padding-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.log-in__phone-input {
+  /*Den default input styling*/
+  height: 62px;
+  border-radius: 10px;
+  border: #0a5064 solid 2px;
+  background-color: #bae7f7; /*background colour is changed from figma design, as the opacity affects the border as well*/
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #0a5064;
+}
+.log-in__pin-input {
+  height: 62px;
+  border-radius: 10px;
+  border: #0a5064 solid 2px;
+  background-color: #bae7f7;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #0a5064;
+}
+/*Active state for phone and pin inputs*/
+.log-in__phone-input:active {
+  background-color: #9adbf3;
+}
+.log-in__pin-input:active {
+  background-color: #9adbf3;
+}
+.log-in__pin-input::placeholder {
+  color: #0a5064;
+  opacity: 50%;
+  text-align: center;
+}
+.log-in__phone-input::placeholder {
+  color: #0a5064;
+  opacity: 50%;
+  text-align: center;
+}
+.log-in__btn-label {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  color: #e1f9ff;
+  text-decoration: none;
+  height: 55px;
+  background-color: #f68c47;
+  border-radius: 30px;
+  text-align: center; /*helps centering the text inside the anchor button*/
+  line-height: 50.5px;
+  width: 150px;
+}
+.log-in_btn-label:active {
+  color: #f47932;
+}
+.log-in__pin__label {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+.log-in__label {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+.log-in__pin-forgot-label {
+  color: #0a5064;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  padding-bottom: 15px;
+  padding-top: 5px;
+}
+/*This section is for the send code screen*/
+
+/*This section is for the choose pin screen*/
+.choose-pin {
+  background-color: rgb(255, 255, 255, 0.5);
+  backdrop-filter: blur(40px);
+  height: 275px;
+  border-radius: 15px;
+  margin: 2.5rem;
+  box-shadow: 10px 5px 5px rgb(0, 0, 0, 0.2);
+  border: white solid 3px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+.choose-pin__label {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: #0a5064;
+  padding-top: 1rem;
+}
+.choose-pin__pin-input {
+  height: 62px;
+  border-radius: 10px;
+  border: #0a5064 solid 2px;
+  background-color: #bae7f7;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #0a5064;
+}
+.choose-pin__pin-input:active {
+  background-color: #9adbf3;
+}
+.choose-pin__pin-input::placeholder {
+  color: #0a5064;
+  opacity: 50%;
+  text-align: center;
+  width: 100%;
+}
+.choose-pin__pin-input--confirm {
+  height: 62px;
+  border-radius: 10px;
+  border: #0a5064 solid 2px;
+  background-color: #bae7f7;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #0a5064;
+}
+.choose-pin__pin-input--confirm:active {
+  background-color: #9adbf3;
+}
+.choose-pin__pin-input--confirm::placeholder {
+  color: #0a5064;
+  opacity: 50%;
+  text-align: center;
+}
+.pin-confirmed {
+  text-decoration: none;
+  text-align: center;
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f68c47;
+  color: #e1f9ff;
+  height: 55px;
+  border-radius: 30px;
+  line-height: 50.5px;
+  width: 200;
+}
+/*This section is for the activate code screen*/
+.code-answer {
+  background-color: rgb(255, 255, 255, 0.5);
+  backdrop-filter: blur(40px);
+  height: 200px;
+  border-radius: 15px;
+  margin: 2.5rem;
+  box-shadow: 10px 5px 5px rgb(0, 0, 0, 0.2);
+  border: white solid 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.code-answer__input {
+  height: 62px;
+  border-radius: 10px;
+  border: #0a5064 solid 2px;
+  background-color: #bae7f7;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #0a5064;
+}
+.code-answer__input:active {
+  background-color: #9adbf3;
+} /*active state for the activation code*/
+.code-answer__input::placeholder {
+  color: #0a5064;
+  opacity: 50%;
+  text-align: center;
+}
+.code-answer__label {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: #0a5064;
+  padding-top: 1rem;
+  text-align: center;
+}
+.resend-code-btn {
+  color: #0a5064;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  padding-bottom: 15px;
+  padding-top: 5px;
+}
+.resend-code-btn {
+  text-decoration: none;
+  text-align: center;
+  font-size: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f68c47;
+  color: #e1f9ff;
+  height: 35px;
+  border-radius: 30px;
+  line-height: 52px;
+  width: 200;
+}
+.code-send {
+  background-color: rgb(255, 255, 255, 0.5);
+  backdrop-filter: blur(40px);
+  height: 275px;
+  border-radius: 15px;
+  margin: 2.5rem;
+  box-shadow: 10px 5px 5px rgb(0, 0, 0, 0.2);
+  border: white solid 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.code-send__label {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: #0a5064;
+}
+.code-send__checkbox-container {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  color: #0a5064;
+  text-align: center;
+}
+.tos {
+  color: #0a5064;
+}
+.send-code-btn {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  color: #e1f9ff;
+  text-decoration: none;
+  height: 55px;
+  background-color: #f68c47;
+  border-radius: 30px;
+  text-align: center; /*helps centering the text inside the anchor button*/
+  line-height: 50.5px;
+}
+/*Media Query---------------------------------------------------------------------------*/
+/*Break point at mobile S and M----------------------------------------------------------*/
+@media screen and (max-width: 400px) {
+  .start-menu {
+    padding: 1rem;
+  }
+  /*Send Code screen*/
+  .code-send {
+    padding: 1rem;
+    height: 300px;
+  }
+  .send-code-btn {
+    font-size: 20px;
+  }
+  /*Activate code screen*/
+  .code-answer {
+    height: 250px;
+  }
+}
+/*Break point at mobile L----------------------------------------------------------*/
+@media screen and (max-width: 500px) {
+  .start-menu {
+    padding: 1rem;
+  }
+  /*Log in w. pin screen*/
+  .log-in {
+    padding: 1rem;
+  }
+  .log-in__phone-input {
+    width: 200px;
+    font-size: 17px;
+  }
+  .log-in__pin-input {
+    width: 200px;
+    font-size: 17px;
+  }
+  .log-in__btn-label {
+    width: 200px;
+  }
+  /*Send code screen*/
+  .code-send__tos-checkbox {
+    transform: scale(1.5); /*Sizes up the checkbox*/
+  }
+  /*Activate code screen*/
+  .code-answer__input {
+    width: 200px;
+    font-size: 17px;
+  }
+  .resend-code-btn {
+    font-size: 20px;
+  }
+  /*Choose pin screen*/
+  .choose-pin__pin-input {
+    width: 200px;
+    font-size: 17px;
+  }
+  .choose-pin__pin-input--confirm {
+    width: 200px;
+    font-size: 17px;
+  }
+}
+/*Break point at tablet and onwards----------------------------------------------------------*/
+@media screen and (width >= 500px) {
+  /*From Kevin powell video on better wat to use media query*/
+  .start-menu {
+    padding: 1rem;
+  }
+  /*Log in w. pin screen*/
+  .log-in {
+    padding: 1rem;
+  }
+  .log-in__btn-label {
+    width: 300px;
+  }
+  .log-in__pin-forgot-label {
+    font-size: 20px;
+  }
+  /*Send code screen*/
+  .code-send__tos-checkbox {
+    transform: scale(2); /*Sizes up the checkbox*/
+  }
+}
